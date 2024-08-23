@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import CustomButton from "../Button/Button";
 import { Link } from "react-router-dom";
-import { Drawer, IconButton, ThemeProvider } from "@material-tailwind/react";
 import logo from "../../assets/logo.svg";
 import envelopeicon from "../../assets/envelope.svg";
 import "./Header.css";
+import { Drawer, IconButton, ThemeProvider } from "@mui/material";
 
 // const Header = () => {
 //   return <p>Home</p>
@@ -142,7 +142,7 @@ const Header = () => {
 
       {/* Drawer for smaller screens */}
       <div className="md:hidden">
-        {/* <ThemeProvider value={theme}>
+         {/* <ThemeProvider value={theme}>
           <Drawer open={open} onClose={closeDrawer} className="p-4">
             <div className="pb-4 flex items-center justify-between border-b border-[#ffffff25]">
               <Link to="/">
@@ -250,7 +250,7 @@ const Header = () => {
               </ul>
             </div>
           </Drawer>
-        </ThemeProvider> */}
+        </ThemeProvider>  */}
       </div>
     </>
   );
